@@ -1,0 +1,13 @@
+if (GetLocale() == "zhTW") then
+	-- Class Names
+	KGMM_LOCALIZED_DRUID = "德魯伊";
+	KGMM_LOCALIZED_HUNTER = "獵人";
+	KGMM_LOCALIZED_MAGE = "法師";
+	KGMM_LOCALIZED_PALADIN = "聖騎士";
+	KGMM_LOCALIZED_PRIEST = "牧師";
+	KGMM_LOCALIZED_ROGUE = "盜賊";
+	KGMM_LOCALIZED_SHAMAN = "薩滿";
+	KGMM_LOCALIZED_WARLOCK = "術士";
+	KGMM_LOCALIZED_WARRIOR = "戰士";
+
+end

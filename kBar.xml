@@ -1,0 +1,164 @@
+<Ui xmlns="http://www.blizzard.com/wow/ui/" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.blizzard.com/wow/ui/ ..\..\UI.xsd">
+	<Script file="kActionButton.lua"/>
+	<Script file="kBar.lua"/>
+	<!-- button -->
+	<CheckButton name="kBarButtonTemplate" inherits="ActionBarButtonTemplate" virtual="true">
+		<Scripts>
+			<OnLoad>kActionButton_OnLoad()</OnLoad>
+			<OnShow>ActionButton_Update()</OnShow>
+			<!--OnEvent>kActionButton_OnEvent()</OnEvent>
+			<OnEnter>kActionButton_OnEnter()</OnEnter>
+			<OnLeave>kActionButton_OnLeave()</OnLeave-->
+		</Scripts>
+	</CheckButton>
+	<!-- tab -->
+	<Button name="kBarTabTemplate" frameStrata="MEDIUM" alpha="0.5" clampedToScreen="true" virtual="true">
+		<Size x="34" y="8"/>
+		<Anchors>
+			<Anchor point="BOTTOM" relativePoint="TOP"><Offset x="0" y="1"/></Anchor>
+		</Anchors>
+		<Scripts>
+			<OnLoad>kBarTab_OnLoad()</OnLoad>
+			<!--OnEnter>kBarTab_OnEnter()</OnEnter>
+			<OnLeave>kBarTab_OnLeave()</OnLeave-->
+			<OnClick>kBarTab_OnClick(arg1)</OnClick>
+			<!--OnDoubleClick>kBarTab_OnDoubleClick(arg1)</OnDoubleClick-->
+			<OnDragStart>kBarTab_OnDragStart()</OnDragStart>
+			<OnDragStop>kBarTab_OnDragStop()</OnDragStop>
+		</Scripts>
+		<ButtonText font="GameFontGreen" hidden="true">
+			<Anchors>
+				<Anchor point="BOTTOM" relativePoint="TOP"/>
+			</Anchors>
+		</ButtonText>
+		<NormalTexture file="Interface\AddOns\KronosGMAddon\tab1.tga">
+			<Size x="56" y="12"/>
+			<Anchors>
+				<Anchor point="CENTER"/>
+			</Anchors>
+		</NormalTexture>
+		<HighlightTexture file="Interface\AddOns\KronosGMAddon\tab2.tga" alphaMode="ADD">
+			<Size x="56" y="12"/>
+			<Anchors>
+				<Anchor point="CENTER"/>
+			</Anchors>
+		</HighlightTexture>
+	</Button>
+	<!-- bar -->
+	<Frame name="kBarTemplate" toplevel="true" frameStrata="LOW" movable="true" hidden="true" virtual="true">
+		<Size x="36" y="36"/>
+		<Anchors>
+			<Anchor point="TOP" relativeTo="UIParent"><Offset x="0" y="-100"/></Anchor>
+		</Anchors>
+		<Frames>
+			<Button name="$parentTab" inherits="kBarTabTemplate"/>
+			<CheckButton name="$parentButton1" inherits="kBarButtonTemplate" id="1" clampedToScreen="true">
+				<Anchors><Anchor point="TOP"/></Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton2" inherits="kBarButtonTemplate" id="2">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentButton1" relativePoint="BOTTOM">
+						<Offset x="0" y="-6"/>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton3" inherits="kBarButtonTemplate" id="3">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentButton2" relativePoint="BOTTOM">
+						<Offset x="0" y="-6"/>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton4" inherits="kBarButtonTemplate" id="4">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentButton3" relativePoint="BOTTOM">
+						<Offset x="0" y="-6"/>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton5" inherits="kBarButtonTemplate" id="5">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentButton4" relativePoint="BOTTOM">
+						<Offset x="0" y="-6"/>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton6" inherits="kBarButtonTemplate" id="6">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentButton5" relativePoint="BOTTOM">
+						<Offset x="0" y="-6"/>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton7" inherits="kBarButtonTemplate" id="7">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentButton6" relativePoint="BOTTOM">
+						<Offset x="0" y="-6"/>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton8" inherits="kBarButtonTemplate" id="8">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentButton7" relativePoint="BOTTOM">
+						<Offset x="0" y="-6"/>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton9" inherits="kBarButtonTemplate" id="9">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentButton8" relativePoint="BOTTOM">
+						<Offset x="0" y="-6"/>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton10" inherits="kBarButtonTemplate" id="10">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentButton9" relativePoint="BOTTOM">
+						<Offset x="0" y="-6"/>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton11" inherits="kBarButtonTemplate" id="11">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentButton10" relativePoint="BOTTOM">
+						<Offset x="0" y="-6"/>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+			<CheckButton name="$parentButton12" inherits="kBarButtonTemplate" id="12">
+				<Anchors>
+					<Anchor point="TOP" relativeTo="$parentButton11" relativePoint="BOTTOM">
+						<Offset x="0" y="-6"/>
+					</Anchor>
+				</Anchors>
+			</CheckButton>
+		</Frames>
+		<Scripts>
+			<!--OnEnter>kBar_OnEnter()</OnEnter>
+			<OnLeave>kBar_OnLeave()</OnLeave-->
+			<OnLoad>kBar_OnLoad() this.iskBar = true</OnLoad>
+			<OnEvent>kBar_OnEvent(event)</OnEvent>
+		</Scripts>
+	</Frame>
+	<!-- frame -->
+	<Frame name="kBarFrame" parent="UIParent" frameStrata="BACKGROUND ">
+		<Frames>
+			<Frame name="kBar1" inherits="kBarTemplate" id="1"/>
+			<Frame name="kBar2" inherits="kBarTemplate" id="2"/>
+			<Frame name="kBar3" inherits="kBarTemplate" id="3"/>
+			<Frame name="kBar4" inherits="kBarTemplate" id="4"/>
+			<Frame name="kBar9" inherits="kBarTemplate" id="9"/>
+			<Button name="kBar1SonTab" inherits="kBarTabTemplate" hidden="true"/>
+			<Button name="kBar2SonTab" inherits="kBarTabTemplate" hidden="true"/>
+			<Button name="kBar3SonTab" inherits="kBarTabTemplate" hidden="true"/>
+			<Button name="kBar4SonTab" inherits="kBarTabTemplate" hidden="true"/>
+			<Button name="kBar9SonTab" inherits="kBarTabTemplate" hidden="true"/>
+		</Frames>
+		<Scripts>
+			<OnLoad>this:RegisterEvent("PLAYER_ENTERING_WORLD") this:RegisterEvent("VARIABLES_LOADED")</OnLoad>
+			<OnEvent>kBarFrame_OnEvent(event)</OnEvent>
+		</Scripts>
+	</Frame>
+</Ui>

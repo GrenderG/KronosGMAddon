@@ -1,0 +1,20 @@
+<Bindings>
+	<Binding name="KGMMENABLE" header="KGMMMOD">
+			KGMM_Bindings_EnableKGMM();
+	</Binding>
+	<Binding name="KGMMHISTORY" header="KGMMMOD">
+			KGMM_HistoryFrame:Show();
+	</Binding>
+	<Binding name="KGMMSHOWNEW" header="KGMMMOD">
+			KGMM_ShowNewMessages();
+	</Binding>
+	<Binding name="KGMMTOGGLE" header="KGMMMOD">
+			KGMM_ToggleWindow_Toggle();
+	</Binding>
+	<Binding name="KGMMSHOWALL" header="KGMMMOD">
+			KGMM_ShowAll();
+	</Binding>
+	<Binding name="KGMMHIDEALL" header="KGMMMOD">
+			KGMM_HideAll();
+	</Binding>
+</Bindings>

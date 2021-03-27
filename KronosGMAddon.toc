@@ -1,0 +1,48 @@
+## Interface: 11200
+## Title: |cFFFF7D0AKronos |cFFFFFFFFGM |cFFFF7D0AAddon |cFFFFFFFFv3.1.11
+## Notes: Creator: Gurky
+## Author: Gurky
+## Version: 3.1.11
+## Dependencies: Ace2
+## SavedVariables: gmSave, gmAddonFrame_Settings, kNoteDB, KGMM_Data, KGMM_Alias, KGMM_Filters, KGMM_History, EzDismount_Config
+## SavedVariablesPerCharacter: kBar
+
+libs\AceHook-2.1\AceHook-2.1.lua
+gmAddonFrameForm.xml
+Frame.xml
+
+
+localization.cn.lua
+localization.tw.lua
+localization.en.lua
+
+kBar.xml
+kBarOption.xml
+kMainBar.lua
+
+EzDismount_tables.lua
+EzDismount.xml
+
+lib\AceLibrary\AceLibrary.lua
+lib\AceOO\AceOO-2.0.lua
+lib\AceConsole\AceConsole-2.0.lua
+lib\AceLocale\AceLocale-2.2.lua
+lib\AceEvent\AceEvent-2.0.lua
+lib\AceAddon\AceAddon-2.0.lua
+lib\AceHook\AceHook-2.1.lua
+lib\AceDB\AceDB-2.0.lua
+lib\AceDebug\AceDebug-2.0.lua
+lib\Babble-Class-2.2\Babble-Class-2.2.lua
+lib\Deformat-2.0\Deformat-2.0.lua
+locals\enUS.lua
+locals\zhCN.lua
+locals\koKR.lua
+kNote.lua
+
+KGMM\KGMM.xml
+KGMM\KGMM_UrlCopy.xml
+KGMM\KGMM_Icon.xml
+KGMM\KGMM_Options.xml
+KGMM\KGMM_History.xml
+KGMM\KGMM_Titan.xml
+
