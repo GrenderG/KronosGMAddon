@@ -1,6 +1,8 @@
 # Kronos-GM-Addon
 Vanilla Wow 1.12.1 GM Addon built around Kronos-WoW.com Core.
 
+Image: https://imgur.com/3qgFPEM
+
 ### Requirments
 Ace2: https://github.com/Doctorbeefy/Ace2
 
