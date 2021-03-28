@@ -402,6 +402,7 @@ function gmAddon:AddMessage(frame, text, r, g, b, id) --Hook to scan chat for ke
 --		gmMailItem:Hide()
 --		gmMailOwner:Hide()
 --		gmMailIssue:Hide()
+                btnGmWho:Disable()
 		gmAuctionOpen:Disable()
 --		gmMountOpen:Disable()		
 		end
