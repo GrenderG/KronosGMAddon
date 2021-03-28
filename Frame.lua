@@ -299,7 +299,7 @@ function btnGmPinfoId_OnClick()
 end
 function gmAddon:AddMessage(frame, text, r, g, b, id) --Hook to scan chat for keywords
 	if id == GetChatTypeIndex("SYSTEM") then
-	
+-- Change Values here to disable or hide certain views of the addon based on account level
 		if strfind(text,"Your account level is: 5") then --level 5 disable buttons	
 		gmAuctionOpen:Disable()
 		end
@@ -384,26 +384,26 @@ function gmAddon:AddMessage(frame, text, r, g, b, id) --Hook to scan chat for ke
 		gmMountOpen:Disable()		
 		end		
 		if strfind(text,"Your account level is: 0") then --level 0 disable buttons
-		btngmLearnOpen:Disable()
-		btngmAuraOpen:Disable()		
-		btngmBanIPRange:Disable()
-		btngmBanIP:Disable()
-		btngmBaninfoIP:Disable()
-		btngmLookup:Disable()
-		btngmLookupacc:Disable()
-		btngmBanOpen:Disable()		
-		ipformat:Hide()	
-		gmMailSendDel:Disable()
-		gmMailSend:Disable()
-		gmIssueSend:Disable()
-		txtitemid:Hide()
-		txtissueid:Hide()
-		txtownerid:Hide()
-		gmMailItem:Hide()
-		gmMailOwner:Hide()
-		gmMailIssue:Hide()
+--		btngmLearnOpen:Disable()
+--		btngmAuraOpen:Disable()		
+--		btngmBanIPRange:Disable()
+--		btngmBanIP:Disable()
+--		btngmBaninfoIP:Disable()
+--		btngmLookup:Disable()
+--		btngmLookupacc:Disable()
+--		btngmBanOpen:Disable()		
+--		ipformat:Hide()	
+--		gmMailSendDel:Disable()
+--		gmMailSend:Disable()
+--		gmIssueSend:Disable()
+--		txtitemid:Hide()
+--		txtissueid:Hide()
+--		txtownerid:Hide()
+--		gmMailItem:Hide()
+--		gmMailOwner:Hide()
+--		gmMailIssue:Hide()
 		gmAuctionOpen:Disable()
-		gmMountOpen:Disable()		
+--		gmMountOpen:Disable()		
 		end
 
 		if strfind(text,"Player") and strfind(text,"SEC:") then 
